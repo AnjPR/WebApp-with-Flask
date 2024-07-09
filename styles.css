@@ -1,0 +1,77 @@
+@import url('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCLeTGyu1RZH2VGIekVvPTpkioukNsH7P4');
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    text-align: center;
+}
+.heading{
+    text-align: center;
+    
+
+}
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+input[type=text], select {
+    text-align: center;
+    width: 50vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea[type=text], select {
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+input[type=submit] {
+    max-width: fit-content;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=rewrite] {
+    max-width: 10ch;
+    text-align: center;
+    background-color: #c42115;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=rewrite]:hover {
+    background-color: #ae1b11;
+}
+  

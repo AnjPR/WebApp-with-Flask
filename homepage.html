@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
 <title>GreetingU</title>
+<link rel="stylesheet" href="styles.css">
+
 <head>
-<h1>Hello World 2.0 Project</h1>
-<h2>Greetings for you</h2>
+
 </head>
 <body>
-<form method="post" action="{{url_for('operation_result') }}" id="calculator_form">
-<br/>
-<br/>
-<label for="Name">Name:</label>
-<input type="text" name="Name" id="Value">
-<br/>    
-<br/>
-<label for="operation">Greeting</lable>
-<select id="operation" name="operation">
-     <option value="1">Happy Bday</option>
-     <option value="2">Happy Christmas</option>
-     <option value="3">Happy NewYear</option>
-</select>
-<input type="submit" value="Submit" style="color:green;"/>
-<input type="reset" value="reset" style="color:red;"/>
-</form>
+     <div class="container">
+          <div class="heading">
+               <img src="HEADING.PNG" alt="Greetings for you !!" >
+          </div>
+          
+          <form method="post" action="{{url_for('operation_result') }}" id="calculator_form">
+          <br/>
+          <br/>
+
+          <!-- <label for="Name">Name:</label> -->
+
+          <input type="text" id="name" name="name" placeholder=" To whom you are sending this.. " >
+
+          <br/>    
+          <br/>
+
+          <input type="text"id="message" name="greetings" placeholder="On what occasion you are wishing them..." ></input>
+
+     <!--    
+          <select id="operation" name="operation">
+               <option value="1">Happy Bday</option>
+               <option value="2">Happy Christmas</option>
+               <option value="3">Happy NewYear</option>
+          </select>
+     -->  
+          <br/>
+          <input type="submit" value="Submit">
+          <input type="rewrite" value="Rewrite" >
+          </form>
+        
+     </div>
+
+
 </body>
 </html>
