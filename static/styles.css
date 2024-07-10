@@ -59,8 +59,8 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-input[type=rewrite] {
-    max-width: 10ch;
+input[type=reset] {
+    max-width: fit-content;
     text-align: center;
     background-color: #c42115;
     color: white;
@@ -70,7 +70,7 @@ input[type=rewrite] {
     border-radius: 4px;
     cursor: pointer;
 }
-input[type=rewrite]:hover {
+input[type=reset]:hover {
     background-color: #ae1b11;
 }
   

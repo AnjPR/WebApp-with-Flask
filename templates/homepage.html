@@ -1,44 +1,25 @@
 <!DOCTYPE html>
 <html>
-<title>GreetingU</title>
-<link rel="stylesheet" href="styles.css">
-
 <head>
-
+    <title>GreetingU</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-     <div class="container">
-          <div class="heading">
-               <img src="HEADING.PNG" alt="Greetings for you !!" >
-          </div>
-          
-          <form method="post" action="{{url_for('operation_result') }}" id="calculator_form">
-          <br/>
-          <br/>
-
-          <!-- <label for="Name">Name:</label> -->
-
-          <input type="text" id="name" name="name" placeholder=" To whom you are sending this.. " >
-
-          <br/>    
-          <br/>
-
-          <input type="text" id="message" name="greetings" placeholder="On what occasion you are wishing them..." ></input>
-
-     <!--    
-          <select id="operation" name="operation">
-               <option value="1">Happy Bday</option>
-               <option value="2">Happy Christmas</option>
-               <option value="3">Happy NewYear</option>
-          </select>
-     -->  
-          <br/>
-          <input type="submit" value="Submit">
-          <input type="rewrite" value="Rewrite" >
-          </form>
-        
-     </div>
-
-
+    <div class="container">
+        <div class="heading">
+            <img src="{{url_for('static',filename='HEADING.png') }}" alt="Greetings for you !!">
+        </div>
+        <form method="post" action="{{ url_for('home') }}">
+            <br/>
+            <br/>
+            <input type="text" id="name" name="name" placeholder="To whom you are sending this..">
+            <br/>
+            <br/>
+            <input type="text" id="message" name="message" placeholder="On what occasion you are wishing them...">
+            <br/>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Rewrite">
+        </form>
+    </div>
 </body>
 </html>
